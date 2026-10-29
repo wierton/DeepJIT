@@ -171,7 +171,7 @@ public:
         DJ_HOST_ASSERT(is_executable(bisheng), "Bisheng compiler is not executable: {}", bisheng.string());
         DJ_HOST_ASSERT(is_executable(ld_lld), "Ascend linker is not executable: {}", ld_lld.string());
 
-        const auto asc_devkit_include = home_path / "aarch64-linux/asc/include/adv_api";
+        const auto asc_devkit_include = home_path / "asc/include/adv_api";
         DJ_HOST_ASSERT(std::filesystem::is_directory(asc_devkit_include),
                        "Ascend adv_api include directory was not found: {}", asc_devkit_include.string());
         return {
